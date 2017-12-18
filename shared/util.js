@@ -142,13 +142,9 @@ export function toObject(arr) {
 
 export function noop(a, b, c) {}
 
-export const no = function(a, b, c) {
-	return false;
-};
+export const no = (a, b, c) => false;
 
-export const indentity = function(_) {
-	return _;
-};
+export const identity = _ => _;
 
 export function genStaticKeys(modules) {
 	return modules
